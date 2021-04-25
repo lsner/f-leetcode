@@ -26,7 +26,7 @@
  * @param {string} s
  * @return {number}
  */
-var lengthOfLongestSubstring = function(s) {
+var lengthOfLongestSubstring = function (s) {
   if (!s) return 0;
 
   let _s = s.split("");
@@ -54,8 +54,8 @@ var lengthOfLongestSubstring = function(s) {
   return Math.max(...len);
 };
 
-// 双指针！！！！！
-var lengthOfLongestSubstring2 = function(s) {
+// 双指针！！！！！  s = "abcabcbb"
+var lengthOfLongestSubstring2 = function (s) {
   if (!s) return 0;
 
   let low = 0;

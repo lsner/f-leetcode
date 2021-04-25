@@ -44,7 +44,7 @@
  * @return {number[]}
  */
 
-var genList = function(node, list) {
+var genList = function (node, list) {
   if (!node) return [];
   if (node.left !== null) {
     genList(node.left, list);
@@ -59,8 +59,10 @@ var genList = function(node, list) {
   return list;
 };
 
-var inorderTraversal = function(root) {
+var inorderTraversal = function (root) {
   let list = [];
   list = genList(root, list);
   return list;
 };
+
+//
